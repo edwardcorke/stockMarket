@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8301685-b00d-4c30-9041-70393d5c40d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stockMarket.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/META-INF/stockMarket.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Helper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/client/images/404.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/configuration/Config.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/httpHandlers/BaseHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/client/images/404.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/client/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/client/index/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/client/pageNotFound/pageNotFound.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/client/pageNotFound/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stockMarket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stockMarket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/Server.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StockMarketServer/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="238">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,52 +30,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/Helper.java">
+        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/client/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/client/index/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -101,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -130,8 +75,9 @@
         <option value="$PROJECT_DIR$/src/StockMarketServer/client/index/index.html" />
         <option value="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java" />
         <option value="$PROJECT_DIR$/src/StockMarketServer/Helper.java" />
-        <option value="$PROJECT_DIR$/src/StockMarketServer/Server.java" />
         <option value="$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java" />
+        <option value="$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java" />
+        <option value="$PROJECT_DIR$/src/StockMarketServer/Server.java" />
       </list>
     </option>
   </component>
@@ -210,9 +156,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576556433232" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576591544548" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.1484375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -271,7 +217,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.3290461" />
@@ -279,7 +225,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3290461" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,16 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StockMarketServer/client/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -411,20 +347,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StockMarketServer/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -505,6 +461,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>libs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
