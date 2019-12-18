@@ -35,13 +35,11 @@ public class UserHandler implements HttpHandler {
         switch (uriSplit.length) {
             case(2):
                 if (requestMethod.equals("POST")) {
-                    System.out.println("Creating user");
                     createUser();
                 }
                 break;
             case(3):
                 if (uriSplit[2].contains("login") && requestMethod.equals("POST")) {
-                        System.out.println("Log in");
                         attemptLogin();
                     }
                 break;
@@ -70,6 +68,7 @@ public class UserHandler implements HttpHandler {
                     keyValuePairs.get("password"),
                     Float.valueOf(keyValuePairs.get("balance")));
             reponseCode = 200;
+            System.out.println("Created Trader Account");
         }
     }
 
