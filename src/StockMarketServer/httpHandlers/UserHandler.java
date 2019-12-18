@@ -60,15 +60,20 @@ public class UserHandler implements HttpHandler {
         //search for trader by username
         String findUserStatement = "SELECT * FROM traders WHERE username = \'" + keyValuePairs.get("username")+"\'";
         ResultSet userSearchResult = DatabaseEngine.executeSQLStatement(findUserStatement);
-        try {
-            String passwordFound = userSearchResult.getString("passwordHashed");
-            if(passwordFound.equals(Helper.hashString(keyValuePairs.get("password")))) {
-                System.out.println("Correct login");
-            } else {
-                System.out.println("Incorrect details");
+            try {
+                String passwordFound = userSearchResult.getString("passwordHashed");
+                if (passwordFound.equals(Helper.hashString(keyValuePairs.get("password")))) {
+                    System.out.println("Correct login");
+                    reponseCode = 200;
+                    //TODO: add JWT to header
+                } else {
+                    System.out.println("Incorrect details");
+                    reponseCode = 401;
+                }
+            } catch (Exception e) {
+                System.out.println("User not found");
+                reponseCode = 400;
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

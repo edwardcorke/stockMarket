@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8301685-b00d-4c30-9041-70393d5c40d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/database/UserEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/CompanyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/UserHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Helper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/configuration/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/configuration/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/database/DatabaseEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/database/DatabaseEngine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/database/globalStockMarket.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/database/globalStockMarket.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/configuration/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/database/DatabaseEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/httpHandlers/UserHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/stockMarket/StockMarketServer/httpHandlers/UserHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockMarketServer/database/globalStockMarket.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/database/globalStockMarket.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/database/globalStockMarket.db-journal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/BaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockMarketServer/httpHandlers/UserHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StockMarketServer/httpHandlers/UserHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="182">
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -479,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StockMarketServer/httpHandlers/UserHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="182">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
