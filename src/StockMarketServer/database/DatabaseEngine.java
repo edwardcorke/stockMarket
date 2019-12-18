@@ -4,6 +4,7 @@ import jdk.nashorn.internal.runtime.ECMAException;
 
 import java.io.File;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class DatabaseEngine {
     private static final String dbRootDirectory = "src/StockMarketServer/database/";
@@ -16,7 +17,38 @@ public class DatabaseEngine {
     public static void start(String databaseName){
         dbName = databaseName;
         open();
-        createTableTest();
+        configureDateBaseFile();
+    }
+
+    private static void configureDateBaseFile() {
+        ArrayList<String> createTableStatements = new ArrayList<>();
+        createTableStatements.add("CREATE TABLE IF NOT EXISTS 'companies' " +
+                        " ('cID' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, " +
+                        " 'name' TEXT NOT NULL, " +
+                        " 'value' NUMERIC DEFAULT 0, " +
+                        " 'startDate' DATE, " +
+                        " 'description' TEXT " +
+                        ")");
+
+        createTableStatements.add("CREATE TABLE IF NOT EXISTS 'companyTrades' " +
+                        " ('tID' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, " +
+                        " 'cID'	INTEGER, " +
+                        " 'sell/buy' TEXT NOT NULL, " +
+                        " 'sizeOfTrade'	INTEGER NOT NULL, " +
+                        " 'traderID' INTEGER NOT NULL, " +
+                        " 'timeOfTrade' TIMESTAMP, " +
+                        " FOREIGN KEY('cID') REFERENCES 'companies'('cID'), " +
+                        " FOREIGN KEY('traderID') REFERENCES 'traders'('tID') " +
+                        " )");
+
+        createTableStatements.add("CREATE TABLE IF NOT EXISTS 'traders' " +
+                        " ('tID' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, " +
+                        " 'username' TEXT NOT NULL, " +
+                        " 'passwordHashed' TEXT NOT NULL, " +
+                        " 'balance' NUMERIC NOT NULL DEFAULT 0" +
+                        " )");
+
+        createTableStatements.forEach((statement) -> executeSQLStatement(statement));
     }
 
     /**
@@ -118,6 +150,25 @@ public class DatabaseEngine {
             con.commit(); // Commit any updates
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public static ResultSet executeSQLStatement(String statementText) {
+        try {
+            statement = con.createStatement();
+            String[] statementSplit = statementText.split(" ");
+            switch (statementSplit[0]){
+                    case("SELECT"):
+                        return statement.executeQuery(statementText);
+                    default:
+                        statement.executeUpdate(statementText);
+                        con.commit();
+                        return null;
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Could not execute SQL statement");
+            return null;
         }
     }
 

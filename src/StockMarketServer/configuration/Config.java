@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class Config {
 
     public static HashMap<String, String> contentTypes = new HashMap();
+    public static String passwordHashingAlgorithm = "SHA-256";
 
     public static void setup(){
         contentTypes.put("html", "text/html");

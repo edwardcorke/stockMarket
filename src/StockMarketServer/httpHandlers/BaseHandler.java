@@ -28,8 +28,7 @@ public class BaseHandler implements HttpHandler{
         urlString = t.getRequestURI().toString();
         this.url =t.getRequestURI().toString().split("/"); //getRequestURI for URL and split
 
-
-        System.out.println("sURI: "+t.getRequestURI().toString());
+        System.out.println("Base URI Received: "+t.getRequestURI().toString());
 
         if(urlString.contains(".")) {
             Helper.returnRequestedFile(t, urlString, os);

@@ -7,8 +7,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.security.MessageDigest;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -90,5 +93,23 @@ public class Helper {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Takes String input and hashes it. Used primarily for password hashing
+     * @param input
+     * @return hashedInput
+     */
+    public static String hashString(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance(Config.passwordHashingAlgorithm);
+            byte[] midHash = md.digest(input.getBytes(StandardCharsets.UTF_8));
+            BigInteger number = new BigInteger(1, midHash);
+            StringBuilder hexString = new StringBuilder(number.toString(16));
+            return hexString.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
     }
 }
